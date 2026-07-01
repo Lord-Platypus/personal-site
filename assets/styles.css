@@ -344,6 +344,19 @@ h1, h2, h3 {
   background: var(--accent);
 }
 
+/* ---------- Centered avatar (About / Chi sono) ---------- */
+.about-photo {
+  width: clamp(200px, 42vw, 240px);
+  height: clamp(200px, 42vw, 240px);
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  background: var(--surface);
+  border: 3px solid var(--accent);
+  box-shadow: 0 12px 32px -14px color-mix(in srgb, var(--accent) 60%, transparent);
+  margin: 0 auto 30px;
+}
+
 /* ---------- Home intro + teasers ---------- */
 .home-intro {
   max-width: 58ch;
@@ -470,6 +483,7 @@ h1, h2, h3 {
   background: var(--surface);
 }
 .contact-form textarea { min-height: 120px; resize: vertical; }
+.contact-form button.btn { justify-content: center; }
 .contact-form select:focus,
 .contact-form input:focus,
 .contact-form textarea:focus {
