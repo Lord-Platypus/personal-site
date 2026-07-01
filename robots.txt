@@ -1,0 +1,15 @@
+# Emanuele Vinci — allow everything, including AI crawlers
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI / LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://emanuele-vinci.it/sitemap.xml

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emanuele Vinci — Sviluppatore App Freelance &amp; Corso Flutter</title>
+  <meta name="description" content="Sviluppatore di app freelance vicino a Verona. App mobile e web end-to-end e un corso Flutter pratico. Freelance app developer near Verona, Italy.">
+
+  <!-- Crawlers: primary is Italian; expose both languages -->
+  <link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/">
+  <link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/">
+  <link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/">
+  <link rel="canonical" href="https://emanuele-vinci.it/it/">
+
+  <!-- Send visitors to the Italian (primary) page -->
+  <meta http-equiv="refresh" content="0; url=/it/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    // Prefer the visitor's language when it is English; default to Italian.
+    (function () {
+      try {
+        var lang = (navigator.language || navigator.userLanguage || "it").toLowerCase();
+        var dest = lang.indexOf("en") === 0 ? "/en/" : "/it/";
+        location.replace(dest);
+      } catch (e) {
+        location.replace("/it/");
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #fffaf6; color: #171310;
+           display: grid; place-items: center; min-height: 100vh; margin: 0; text-align: center; }
+    a { color: #e2560c; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Reindirizzamento in corso… / Redirecting…</p>
+    <p>
+      <a href="/it/">Continua in italiano →</a> &nbsp;·&nbsp;
+      <a href="/en/">Continue in English →</a>
+    </p>
+  </main>
+</body>
+</html>

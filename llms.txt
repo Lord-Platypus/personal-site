@@ -1,0 +1,17 @@
+# Emanuele Vinci — Sviluppatore App Freelance & Corso Flutter
+
+> Sviluppatore di app freelance vicino a Verona, Italia. Crea app mobile e web
+> end-to-end (dall'idea alla pubblicazione su App Store e Google Play) e tiene un
+> corso Flutter pratico per tutti i livelli, in zona Verona oppure online.
+> Freelance app developer near Verona, Italy — full English version also available.
+
+## Pagine / Pages
+- [Italiano (principale)](https://emanuele-vinci.it/it/): sito principale in italiano
+- [English](https://emanuele-vinci.it/en/): full site in English
+
+## Servizi / Services
+- Sviluppo app: app mobile e web per ogni tipo di business (gestionali, ristorazione, prenotazioni, sanità, fintech, e-commerce, eventi)
+- Corso Flutter: Dart, widget stateless/stateful, state management con BLoC, Clean Architecture, chiamate REST con dio, Git, pubblicazione sugli store
+
+## Contatti / Contact
+- Email: emanuele.vinci.dev@gmail.com
