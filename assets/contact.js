@@ -4,7 +4,6 @@
   if (!form) return;
 
   var select = document.getElementById("cf-reason");
-  var email = document.getElementById("cf-email");
   var message = document.getElementById("cf-message");
   var btn = document.getElementById("cf-send");
   var lang = document.documentElement.lang === "en" ? "en" : "it";
@@ -20,8 +19,7 @@
     var subject = lang === "en"
       ? (isTraining ? "Training enquiry" : "App enquiry")
       : (isTraining ? "Richiesta Formazione" : "Richiesta App");
-    var contactLine = (lang === "en" ? "Contact email: " : "Email di contatto: ") + (email.value || "");
-    var body = (message.value || "") + "\n\n" + contactLine;
+    var body = message.value || "";
     location.href = "mailto:emanuele.vinci.dev@gmail.com"
       + "?subject=" + encodeURIComponent(subject)
       + "&body=" + encodeURIComponent(body);

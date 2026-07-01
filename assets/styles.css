@@ -15,6 +15,7 @@
   --radius-pill: 999px;
   --radius-lg: 22px;
   --maxw: 1080px;
+  --avatar: clamp(180px, 40vw, 224px);   /* About / Chi sono profile photo */
   --font: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -344,17 +345,33 @@ h1, h2, h3 {
   background: var(--accent);
 }
 
-/* ---------- Centered avatar (About / Chi sono) ---------- */
+/* ---------- Avatar straddling the section boundary (About / Chi sono) ---------- */
+/* Tightened heading padding to match the Tecnologie page, and a left-aligned
+   photo pulled up by half its height so it overlaps the white/orange boundary. */
+/* Bottom padding = photo's upper half + a gap, so the space ABOVE the photo
+   matches the ~26px below it while it still straddles the boundary. */
+.bio-head { padding-block: clamp(44px, 7vw, 72px) calc(var(--avatar) / 2 + 28px) !important; }
+.bio-body { padding-top: 0 !important; }
+
 .about-photo {
-  width: clamp(200px, 42vw, 240px);
-  height: clamp(200px, 42vw, 240px);
+  width: var(--avatar);
+  height: var(--avatar);
   border-radius: 50%;
   object-fit: cover;
   padding: 4px;
   background: var(--surface);
   border: 3px solid var(--accent);
   box-shadow: 0 12px 32px -14px color-mix(in srgb, var(--accent) 60%, transparent);
-  margin: 0 auto 30px;
+  /* half the photo rises into the section above → straddles the colour change */
+  margin: calc(var(--avatar) / -2) 0 26px;
+  position: relative;
+  z-index: 1;
+}
+
+/* On narrow screens drop the overlap: photo sits cleanly inside the section. */
+@media (max-width: 600px) {
+  .bio-head { padding-bottom: clamp(28px, 7vw, 44px) !important; }
+  .about-photo { margin-top: 22px; }
 }
 
 /* ---------- Home intro + teasers ---------- */
@@ -362,7 +379,7 @@ h1, h2, h3 {
   max-width: 58ch;
   font-size: clamp(1.05rem, 2.4vw, 1.3rem);
   color: var(--ink-soft);
-  margin: 4px 0 0;
+  margin: 4px 0 32px;
 }
 .teasers {
   display: grid;
