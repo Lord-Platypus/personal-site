@@ -48,6 +48,7 @@
     "jobTitle": "Freelance App Developer",
     "url": "https://emanuele-vinci.it",
     "email": "mailto:emanuele.vinci.dev@gmail.com",
+    "telephone": "+39 334 1089441",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Pastrengo",
@@ -100,6 +101,13 @@
         </svg>
         <span>Emanuele Vinci</span>
       </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/en/" aria-current="page">Home</a>
+        <a href="/en/technologies/">Technologies</a>
+        <a href="/en/training/">Training</a>
+        <a href="/en/about/">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <nav class="lang-switch" aria-label="Select language">
         <a href="/it/" lang="it">IT</a>
         <a href="/en/" lang="en" aria-current="true">EN</a>
@@ -112,10 +120,16 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="/assets/profile.jpg" alt="Emanuele Vinci" width="132" height="132"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="hero-photo hero-photo--fallback" style="display:none;" aria-hidden="true">EV</div>
+        </div>
         <h1>Emanuele Vinci</h1>
         <p class="pitch">I build apps — and I teach people how to build them.</p>
         <p class="subline">Freelance app developer near Verona, Italy. From idea to store.</p>
-        <a class="btn btn-primary" href="mailto:emanuele.vinci.dev@gmail.com?subject=App%20project">Get in touch →</a>
+        <a class="btn btn-primary" href="#contact">Get in touch →</a>
+        <p class="home-intro">I design and build mobile and web apps for companies and professionals, from idea to release. And I teach how to do it, from the very first steps to shipping on the stores.</p>
       </div>
     </section>
 
@@ -147,12 +161,37 @@
           </div>
         </div>
 
-        <a class="btn btn-primary" href="mailto:emanuele.vinci.dev@gmail.com?subject=App%20project">Tell me about your project →</a>
+        <a class="btn btn-primary" href="#contact">Tell me about your project →</a>
+      </div>
+    </section>
+
+    <!-- Teasers -->
+    <section class="explore" aria-labelledby="explore-title">
+      <div class="container">
+        <p class="eyebrow">Explore</p>
+        <h2 id="explore-title">Take a look</h2>
+        <div class="teasers">
+          <article class="teaser">
+            <h3>Technologies</h3>
+            <p>The tools I work with: Flutter, Dart, backend, AI and more.</p>
+            <a class="arrow-link" href="/en/technologies/">Explore the technologies →</a>
+          </article>
+          <article class="teaser">
+            <h3>Training</h3>
+            <p>A hands-on Flutter course, from zero to publishing. Online or in Verona.</p>
+            <a class="arrow-link" href="/en/training/">See the full syllabus →</a>
+          </article>
+          <article class="teaser">
+            <h3>About</h3>
+            <p>Who I am, what I've worked on and how I work.</p>
+            <a class="arrow-link" href="/en/about/">Learn more →</a>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- Course -->
-    <section class="course" aria-labelledby="course-title">
+    <section class="course section-alt" aria-labelledby="course-title">
       <div class="container">
         <p class="eyebrow">Course</p>
         <h2 id="course-title">Learn to build real apps</h2>
@@ -166,16 +205,44 @@
           <li>Version control with Git</li>
           <li>Publishing to the App Store &amp; Play Store</li>
         </ul>
-        <a class="btn btn-ghost" href="mailto:emanuele.vinci.dev@gmail.com?subject=Flutter%20course%20info">Ask about the course →</a>
+        <a class="btn btn-ghost" href="/en/training/">See the full syllabus →</a>
       </div>
     </section>
 
     <!-- About -->
-    <section class="about section-alt" aria-labelledby="about-title">
+    <section class="about" aria-labelledby="about-title">
       <div class="container">
         <p class="eyebrow">About</p>
         <h2 id="about-title">About</h2>
-        <p>Freelance app developer since 2020, based near Verona, Italy. Years of experience in development and collaborations with companies. I build production apps for private clients — and teach others to do the same.</p>
+        <p>Freelance app developer since 2020, based near Verona, Italy. Years of experience in development and collaborations with companies. I build production apps for private clients — and teach others to do the same. <a href="/en/about/">Learn more about me →</a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Contact</h2>
+        <p class="section-lead">Got an app in mind, or want details about the course? Drop me a line.</p>
+        <div class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="cf-reason">I'm reaching out about:</label>
+            <select id="cf-reason">
+              <option value="app">App</option>
+              <option value="training">Training</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" type="email" autocomplete="email" placeholder="Your email">
+          </div>
+          <div class="field">
+            <label for="cf-message">Your message</label>
+            <textarea id="cf-message" placeholder="Your message"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" id="cf-send">Send →</button>
+        </div>
+        <p class="contact-fallback">Or email me directly: <a href="mailto:emanuele.vinci.dev@gmail.com">emanuele.vinci.dev@gmail.com</a></p>
       </div>
     </section>
 
@@ -184,7 +251,13 @@
   <footer class="site-footer">
     <div class="container">
       <p>© 2026 Emanuele Vinci · Freelance App Developer · Verona, Italy · VAT 04702870231</p>
+      <p class="footer-contact">
+        <a href="mailto:emanuele.vinci.dev@gmail.com">emanuele.vinci.dev@gmail.com</a>
+        <a href="tel:+393341089441">+39 334 1089441</a>
+      </p>
     </div>
   </footer>
+
+  <script src="/assets/contact.js" defer></script>
 </body>
 </html>

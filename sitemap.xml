@@ -13,4 +13,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/"/>
   </url>
+  <url>
+    <loc>https://emanuele-vinci.it/it/tecnologie/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/tecnologie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/technologies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/tecnologie/"/>
+  </url>
+  <url>
+    <loc>https://emanuele-vinci.it/en/technologies/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/tecnologie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/technologies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/tecnologie/"/>
+  </url>
+  <url>
+    <loc>https://emanuele-vinci.it/it/formazione/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/formazione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/training/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/formazione/"/>
+  </url>
+  <url>
+    <loc>https://emanuele-vinci.it/en/training/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/formazione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/training/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/formazione/"/>
+  </url>
+  <url>
+    <loc>https://emanuele-vinci.it/it/chi-sono/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/chi-sono/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/chi-sono/"/>
+  </url>
+  <url>
+    <loc>https://emanuele-vinci.it/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://emanuele-vinci.it/it/chi-sono/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emanuele-vinci.it/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/chi-sono/"/>
+  </url>
 </urlset>

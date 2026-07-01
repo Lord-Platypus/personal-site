@@ -48,6 +48,7 @@
     "jobTitle": "Freelance App Developer",
     "url": "https://emanuele-vinci.it",
     "email": "mailto:emanuele.vinci.dev@gmail.com",
+    "telephone": "+39 334 1089441",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Pastrengo",
@@ -100,6 +101,13 @@
         </svg>
         <span>Emanuele Vinci</span>
       </a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="/it/" aria-current="page">Home</a>
+        <a href="/it/tecnologie/">Tecnologie</a>
+        <a href="/it/formazione/">Formazione</a>
+        <a href="/it/chi-sono/">Chi sono</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
       <nav class="lang-switch" aria-label="Seleziona lingua">
         <a href="/it/" lang="it" aria-current="true">IT</a>
         <a href="/en/" lang="en">EN</a>
@@ -112,10 +120,16 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="/assets/profile.jpg" alt="Emanuele Vinci" width="132" height="132"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="hero-photo hero-photo--fallback" style="display:none;" aria-hidden="true">EV</div>
+        </div>
         <h1>Emanuele Vinci</h1>
         <p class="pitch">Creo app — e insegno a crearle.</p>
         <p class="subline">Sviluppatore di app freelance vicino a Verona. Dall'idea allo store.</p>
-        <a class="btn btn-primary" href="mailto:emanuele.vinci.dev@gmail.com?subject=App%20project">Contattami →</a>
+        <a class="btn btn-primary" href="#contatti">Contattami →</a>
+        <p class="home-intro">Progetto e sviluppo app mobile e web per aziende e professionisti, dall'idea alla pubblicazione. E insegno a farlo, dai primi passi fino al rilascio sugli store.</p>
       </div>
     </section>
 
@@ -147,12 +161,37 @@
           </div>
         </div>
 
-        <a class="btn btn-primary" href="mailto:emanuele.vinci.dev@gmail.com?subject=App%20project">Parlami del tuo progetto →</a>
+        <a class="btn btn-primary" href="#contatti">Parlami del tuo progetto →</a>
+      </div>
+    </section>
+
+    <!-- Teasers -->
+    <section class="explore" aria-labelledby="explore-title">
+      <div class="container">
+        <p class="eyebrow">Esplora</p>
+        <h2 id="explore-title">Dai un'occhiata</h2>
+        <div class="teasers">
+          <article class="teaser">
+            <h3>Tecnologie</h3>
+            <p>Gli strumenti con cui lavoro: Flutter, Dart, backend, AI e altro.</p>
+            <a class="arrow-link" href="/it/tecnologie/">Scopri le tecnologie →</a>
+          </article>
+          <article class="teaser">
+            <h3>Formazione</h3>
+            <p>Un corso Flutter pratico, da zero alla pubblicazione. Online o a Verona.</p>
+            <a class="arrow-link" href="/it/formazione/">Vedi il programma →</a>
+          </article>
+          <article class="teaser">
+            <h3>Chi sono</h3>
+            <p>Chi sono, a cosa ho lavorato e come lavoro.</p>
+            <a class="arrow-link" href="/it/chi-sono/">Scopri di più →</a>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- Course -->
-    <section class="course" aria-labelledby="course-title">
+    <section class="course section-alt" aria-labelledby="course-title">
       <div class="container">
         <p class="eyebrow">Corso</p>
         <h2 id="course-title">Impara a creare app vere</h2>
@@ -166,16 +205,44 @@
           <li>Versionamento con Git</li>
           <li>Pubblicazione su App Store e Play Store</li>
         </ul>
-        <a class="btn btn-ghost" href="mailto:emanuele.vinci.dev@gmail.com?subject=Flutter%20course%20info">Chiedi info sul corso →</a>
+        <a class="btn btn-ghost" href="/it/formazione/">Vedi il programma →</a>
       </div>
     </section>
 
     <!-- About -->
-    <section class="about section-alt" aria-labelledby="about-title">
+    <section class="about" aria-labelledby="about-title">
       <div class="container">
         <p class="eyebrow">Chi sono</p>
         <h2 id="about-title">Chi sono</h2>
-        <p>Sviluppatore di app freelance dal 2020, vicino a Verona. Anni di esperienza nello sviluppo e collaborazioni con aziende. Creo app in produzione per clienti privati — e insegno a fare lo stesso.</p>
+        <p>Sviluppatore di app freelance dal 2020, vicino a Verona. Anni di esperienza nello sviluppo e collaborazioni con aziende. Creo app in produzione per clienti privati — e insegno a fare lo stesso. <a href="/it/chi-sono/">Scopri di più su di me →</a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section-alt" id="contatti" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Contatti</p>
+        <h2 id="contact-title">Contatti</h2>
+        <p class="section-lead">Hai un'app in mente o vuoi informazioni sul corso? Scrivimi.</p>
+        <div class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="cf-reason">Ti contatto per:</label>
+            <select id="cf-reason">
+              <option value="app">App</option>
+              <option value="training">Formazione</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-email">La tua email</label>
+            <input id="cf-email" type="email" autocomplete="email" placeholder="La tua email">
+          </div>
+          <div class="field">
+            <label for="cf-message">La tua richiesta</label>
+            <textarea id="cf-message" placeholder="La tua richiesta"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" id="cf-send">Invia →</button>
+        </div>
+        <p class="contact-fallback">Oppure scrivimi direttamente: <a href="mailto:emanuele.vinci.dev@gmail.com">emanuele.vinci.dev@gmail.com</a></p>
       </div>
     </section>
 
@@ -184,7 +251,13 @@
   <footer class="site-footer">
     <div class="container">
       <p>© 2026 Emanuele Vinci · Sviluppatore App Freelance · Verona · P. IVA 04702870231</p>
+      <p class="footer-contact">
+        <a href="mailto:emanuele.vinci.dev@gmail.com">emanuele.vinci.dev@gmail.com</a>
+        <a href="tel:+393341089441">+39 334 1089441</a>
+      </p>
     </div>
   </footer>
+
+  <script src="/assets/contact.js" defer></script>
 </body>
 </html>
