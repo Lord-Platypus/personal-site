@@ -349,7 +349,8 @@ h1, h2, h3 {
 /* Left-aligned circle sitting inside the orange section, with clear space
    above (so its top never touches the white/orange boundary) and below. */
 .bio-head { padding-block: clamp(44px, 7vw, 72px) clamp(40px, 6vw, 56px) !important; }
-.bio-body { padding-top: clamp(38px, 6vw, 56px) !important; }
+/* Equal gap above and below the photo at every width. */
+.bio-body { padding-top: 26px !important; }
 
 .about-photo {
   width: var(--avatar);
