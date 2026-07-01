@@ -345,13 +345,11 @@ h1, h2, h3 {
   background: var(--accent);
 }
 
-/* ---------- Avatar straddling the section boundary (About / Chi sono) ---------- */
-/* Tightened heading padding to match the Tecnologie page, and a left-aligned
-   photo pulled up by half its height so it overlaps the white/orange boundary. */
-/* Bottom padding = photo's upper half + a gap, so the space ABOVE the photo
-   matches the ~26px below it while it still straddles the boundary. */
-.bio-head { padding-block: clamp(44px, 7vw, 72px) calc(var(--avatar) / 2 + 28px) !important; }
-.bio-body { padding-top: 0 !important; }
+/* ---------- Profile photo (About / Chi sono) ---------- */
+/* Left-aligned circle sitting inside the orange section, with clear space
+   above (so its top never touches the white/orange boundary) and below. */
+.bio-head { padding-block: clamp(44px, 7vw, 72px) clamp(40px, 6vw, 56px) !important; }
+.bio-body { padding-top: clamp(38px, 6vw, 56px) !important; }
 
 .about-photo {
   width: var(--avatar);
@@ -362,16 +360,7 @@ h1, h2, h3 {
   background: var(--surface);
   border: 3px solid var(--accent);
   box-shadow: 0 12px 32px -14px color-mix(in srgb, var(--accent) 60%, transparent);
-  /* half the photo rises into the section above → straddles the colour change */
-  margin: calc(var(--avatar) / -2) 0 26px;
-  position: relative;
-  z-index: 1;
-}
-
-/* On narrow screens drop the overlap: photo sits cleanly inside the section. */
-@media (max-width: 600px) {
-  .bio-head { padding-bottom: clamp(28px, 7vw, 44px) !important; }
-  .about-photo { margin-top: 22px; }
+  margin: 0 0 26px;
 }
 
 /* ---------- Home intro + teasers ---------- */
