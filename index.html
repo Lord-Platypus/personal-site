@@ -12,20 +12,12 @@
   <link rel="alternate" hreflang="x-default" href="https://emanuele-vinci.it/it/">
   <link rel="canonical" href="https://emanuele-vinci.it/it/">
 
-  <!-- Send visitors to the Italian (primary) page -->
+  <!-- Send every visitor to the Italian (primary) page -->
   <meta http-equiv="refresh" content="0; url=/it/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script>
-    // Prefer the visitor's language when it is English; default to Italian.
-    (function () {
-      try {
-        var lang = (navigator.language || navigator.userLanguage || "it").toLowerCase();
-        var dest = lang.indexOf("en") === 0 ? "/en/" : "/it/";
-        location.replace(dest);
-      } catch (e) {
-        location.replace("/it/");
-      }
-    })();
+    // Always Italian; the English version stays one click away in the header.
+    location.replace("/it/");
   </script>
   <style>
     body { font-family: system-ui, sans-serif; background: #fffaf6; color: #171310;
