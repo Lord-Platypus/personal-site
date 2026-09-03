@@ -1,23 +1,36 @@
-# Emanuele Vinci — Sviluppatore App Freelance & Corso Flutter
+# Emanuele Vinci — Formazione AI in ufficio & Sviluppo App | AI training & app development
 
-> Sviluppatore di app freelance vicino a Verona, Italia. Crea app mobile e web
-> end-to-end (dall'idea alla pubblicazione su App Store e Google Play) e tiene un
-> corso Flutter pratico per tutti i livelli, in zona Verona oppure online.
-> Freelance app developer near Verona, Italy — full English version also available.
+> Formatore e sviluppatore freelance vicino a Verona, Italia. Tiene un corso di
+> intelligenza artificiale per l'ufficio (preventivi, email, Excel, Word, documenti
+> in entrata, traduzioni), quattro ore in sede presso l'azienda, senza prerequisiti
+> tecnici, da 500 €. Sviluppa inoltre app mobile e web end-to-end (dall'idea alla
+> pubblicazione su App Store e Google Play) e tiene un corso Flutter pratico per
+> tutti i livelli, in zona Verona oppure online.
+> Trainer and freelance developer near Verona, Italy — AI training for office teams
+> plus mobile/web app development. Full English version also available.
 
 ## Pagine / Pages
-- [Italiano (principale)](https://emanuele-vinci.it/it/): home in italiano — chi è, teaser di tecnologie/formazione/chi sono, form contatti (mailto)
-- [English](https://emanuele-vinci.it/en/): English home — intro, teasers for technologies/training/about, contact form (mailto)
+- [Italiano (principale)](https://emanuele-vinci.it/it/): home in italiano — AI in ufficio, app, teaser di tecnologie/formazione/chi sono, form contatti (mailto)
+- [English](https://emanuele-vinci.it/en/): English home — AI at work, apps, teasers for technologies/training/about, contact form (mailto)
+- [AI in ufficio](https://emanuele-vinci.it/it/ai-in-ufficio/): corso di intelligenza artificiale per aziende — 4 ore in sede, 8 moduli, prezzi (500 € / 1.000 €), come funziona
+- [AI at work](https://emanuele-vinci.it/en/ai-at-work/): AI training for companies — 4 hours on site, 8 modules, prices (€500 / €1,000), how it works
 - [Tecnologie](https://emanuele-vinci.it/it/tecnologie/): tecnologie usate — Flutter, Dart, BLoC, Clean Architecture, Firebase, API REST con dio, Git, pubblicazione, AI
 - [Technologies](https://emanuele-vinci.it/en/technologies/): stack — Flutter, Dart, BLoC, Clean Architecture, Firebase, REST APIs with dio, Git, publishing, AI
-- [Formazione](https://emanuele-vinci.it/it/formazione/): corso Flutter da zero alla pubblicazione, syllabus in 12 moduli, online o a Verona
-- [Training](https://emanuele-vinci.it/en/training/): Flutter course from zero to publishing, 12-module syllabus, online or in Verona
+- [Formazione](https://emanuele-vinci.it/it/formazione/): corso Flutter da zero alla pubblicazione (12 moduli) + corso AI in ufficio per aziende
+- [Training](https://emanuele-vinci.it/en/training/): Flutter course from zero to publishing (12 modules) + AI at work training for companies
 - [Chi sono](https://emanuele-vinci.it/it/chi-sono/): biografia, storia professionale (banking, delivery, parcheggi, sanità), Game Dev Arena
 - [About](https://emanuele-vinci.it/en/about/): bio, work history (banking, delivery, parking, healthcare), Game Dev Arena
 
 ## Servizi / Services
+- Corso "AI in ufficio" / "AI at work": formazione aziendale sull'intelligenza artificiale per segreteria, amministrazione, preventivisti e ufficio acquisti. In sede, ai PC dell'azienda, massimo dieci persone, nessun prerequisito tecnico.
+  - Moduli: preventivi e offerte; email e risposte (solleciti, reclami, ritardi); Excel (formule chieste a parole, liste, scadenzari, listini); Word (lettere, verbali, modelli); documenti in entrata (capitolati, contratti, PDF riassunti); fornitori esteri (mail e traduzioni in inglese e tedesco); da foto a testo (bolle, DDT, appunti di cantiere); metodo per chiedere bene, cosa ricontrollare, cosa non caricare mai.
+  - Formati: corso completo 4 ore in un incontro, 500 €; corso completo + laboratorio 4+4 ore in due incontri, 1.000 €.
+  - Percorso: chiamata di 20 minuti → programma su misura sui documenti dell'azienda → formazione in sede → guida rapida in PDF e 30 giorni di assistenza.
 - Sviluppo app: app mobile e web per ogni tipo di business (gestionali, ristorazione, prenotazioni, sanità, fintech, e-commerce, eventi)
 - Corso Flutter: Dart, OOP, widget stateless/stateful, state management con BLoC, Clean Architecture, chiamate REST con dio, Firebase, Git, test, pubblicazione sugli store, manutenzione
+
+## Zona servita / Area served
+- Verona e provincia, Veneto, Italia (formazione in sede). Corso Flutter anche online.
 
 ## Demo
 - Demo interattiva a scopo dimostrativo (progetti reali coperti da NDA): https://lord-platypus.github.io/portfolio/
