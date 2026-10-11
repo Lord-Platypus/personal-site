@@ -16,6 +16,8 @@
   --radius-lg: 22px;
   --maxw: 1080px;
   --avatar: clamp(180px, 40vw, 224px);   /* About / Chi sono profile photo */
+  --wa: #1faf54;              /* WhatsApp green, darkened for AA contrast */
+  --wa-dark: #178c43;
   --font: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -178,6 +180,22 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
   transform: translateY(-2px);
 }
+.btn-wa {
+  background: var(--wa);
+  color: #fff;
+  box-shadow: 0 8px 22px -8px color-mix(in srgb, var(--wa) 70%, transparent);
+}
+.btn-wa:hover {
+  background: var(--wa-dark);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.btn svg { width: 20px; height: 20px; flex: 0 0 auto; }
+
+/* Breathing room when a button follows a note or a paragraph of terms. */
+.note + .btn,
+.price-terms + .btn { margin-top: 26px; }
 
 /* ---------- Sections ---------- */
 main section { padding-block: clamp(56px, 9vw, 104px); }
